@@ -10,15 +10,7 @@ services:
     volumes:
       - "./backend/:/app"
 
-  frontend:
-      image: node:21
-      container_name: frontend
-      working_dir: /src
-      command: npm start
-      ports:
-        - "3000:3000"
-      volumes:
-        - "./frontend/:/src"
+  
   
   mongodb:
     image: mongo:latest
